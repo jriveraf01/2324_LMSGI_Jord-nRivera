@@ -1,0 +1,12 @@
+  <!ELEMENT sopa_de_cebollas (ingredientes, proceso)>
+  <!ATTLIST sopa_de_cebollas personas CDATA #REQUIRED>
+  
+  <!ELEMENT ingredientes (ingrediente+)>
+  <!ELEMENT ingrediente EMPTY>
+  <!ATTLIST ingrediente peso CDATA #IMPLIED>
+  <!ATTLIST ingrediente cantidad CDATA #IMPLIED>
+  <!ATTLIST ingrediente nombre CDATA #REQUIRED>
+
+  <!ELEMENT proceso (paso+)>
+  <!ELEMENT paso (#PCDATA)>
+  <!ATTLIST paso numero CDATA #REQUIRED>

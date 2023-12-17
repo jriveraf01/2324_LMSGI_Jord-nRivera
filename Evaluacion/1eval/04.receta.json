@@ -1,0 +1,29 @@
+{
+    "sopa_de_cebollas": {
+      "personas": "4",
+      "ingredientes": {
+        "ingrediente": [
+          {"peso": "1Kg", "nombre": "cebollas"},
+          {"cantidad": "2 libros", "nombre": "caldo de carne"},
+          {"peso": "100 gr", "nombre": "mantequilla"},
+          {"cantidad": "1 cucharada", "nombre": "harina"},
+          {"peso": "100 gr", "nombre": "queso emmental suizo o gruyére rallado"},
+          {"cantidad": "1", "nombre": "Pan tostado en rebanadas"},
+          {"nombre": "Tomillo"},
+          {"cantidad": "1", "nombre": "hoja de laurel"},
+          {"nombre": "Pimienta"}
+        ]
+      },
+      "proceso": {
+        "paso": [
+          {"numero": "1", "texto": "Pelar y partir las cebollas en rodajas finas."},
+          {"numero": "2", "texto": "Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse."},
+          {"numero": "3", "texto": "Añadir la harina sin dejar de remover."},
+          {"numero": "4", "texto": "Ponerlo en una cazuela con el caldo, el tomillo y el laurel."},
+          {"numero": "5", "texto": "Dejar cocer a fuego lento durante unos 15 minutos."},
+          {"numero": "6", "texto": "Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno."}
+        ]
+      }
+    }
+  }
+  
