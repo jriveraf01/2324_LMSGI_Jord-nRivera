@@ -1,0 +1,23 @@
+<Employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="TE54_1.xsd">
+
+  <Employee>
+    <EmployeeID>1</EmployeeID>
+    <Name>
+      <FirstName>John</FirstName>
+      <LastName>Doe</LastName>
+    </Name>
+    <Department>IT</Department>
+    <Salary>75000</Salary>
+  </Employee>
+
+  <Employee>
+    <EmployeeID>2</EmployeeID>
+    <Name>
+      <FirstName>Jane</FirstName>
+      <LastName>Smith</LastName>
+    </Name>
+    <Salary>60000</Salary>
+  </Employee>
+
+</Employees>

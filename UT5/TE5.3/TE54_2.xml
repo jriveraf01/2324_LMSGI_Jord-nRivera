@@ -1,0 +1,34 @@
+<LibraryCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="TE54_2.xsd">
+
+  <Book ISBN="978-2-362-3432">
+    <Title>The Great Gatsby</Title>
+    <Author country="United kingdom">F. Scott Fitzgerald</Author>
+    <ISBN>978-3-16-148410-0</ISBN>
+    <Genre>Fiction</Genre>
+    <PublicationYear>1925</PublicationYear>
+  </Book>
+
+  <Book ISBN="978-2-362-3432">
+    <Title>Data Science Essentials</Title>
+    <Author>Lisa Scientist</Author>
+    <ISBN>978-1-23-456789-0</ISBN>
+  </Book>
+
+  <Book ISBN="978-1-23-456789-0">
+    <Title>Amanda's First Day of School</Title>
+    <Author country="France">Amanda Smith</Author>
+    <Author>John Smith</Author>
+    <Genre>Fiction</Genre>
+    <Genre>Children</Genre>
+    <PublicationYear>1997</PublicationYear>
+  </Book>
+
+  <Book ISBN="978-1-23-456789-0">
+    <Title>Harry Potter and the Chamber of Secrets</Title>
+    <Author country="United Kingdom">J. K. Rowling</Author>
+    <Genre>Fiction</Genre>
+    <PublicationYear>1998</PublicationYear>
+  </Book>
+
+</LibraryCatalog>
