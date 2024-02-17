@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="pagina_web">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="coche" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="certificado" type="xs:string" />
+              <xs:element name="descripcion" type="xs:string" />
+              <xs:element name="precio">
+                <xs:complexType>
+                  <xs:choice>
+                    <xs:element name="financiado" type="xs:decimal" />
+                    <xs:element name="al_contado" type="xs:decimal" />
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="garantia">
+                <xs:complexType>
+                  <xs:attribute name="años" type="xs:integer" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ciudad" type="xs:string" fixed="Barcelona" minOccurs="0" />
+              <xs:element name="combustible">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Gasolina" />
+                    <xs:enumeration value="Diésel" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="año" type="xs:integer" />
+              <xs:element name="kilometros" type="xs:integer" />
+              <xs:element name="fecha_hora_publicacion" type="xs:string" />
+              <xs:element name="foto" type="xs:string" minOccurs="0" maxOccurs="10" />
+              <xs:element name="posibles_compradores">
+                <xs:complexType>  
+                  <xs:sequence>
+                    <xs:element name="posible_comprador" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nombre" type="xs:string" />
+                          <xs:element name="apellidos" type="xs:string" />
+                          <xs:element name="telefono" type="xs:string" />
+                          <xs:element name="email" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="dni" type="dniType" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required" />
+            <xs:attribute name="marca" type="marcaType" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="marcaType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Volkswagen" />
+      <xs:enumeration value="BMW" />
+      <xs:enumeration value="Mercedes" />
+      <xs:enumeration value="Chrysler" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="dniType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{8}[a-zA-Z]" />
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
