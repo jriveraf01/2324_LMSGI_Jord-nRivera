@@ -1,0 +1,29 @@
+<!-- Resuelve el ejercicio 03 en este fichero-->
+<!-- PROFESOR -->
+<!DOCTYPE sopa_de_cebollas SYSTEM "esquemas/05.ejercicio.dtd">
+<!-- PROFESOR -->
+<sopa_de_cebollas personas= "4">
+    <ingredientes>
+        <ingrediente peso="1Kg" nombre="cebollas"/>
+        <ingrediente cantidad="2 libros" nombre="caldo de carne"/>
+        <ingrediente peso="100 gr" nombre="mantequilla"/>
+        <ingrediente cantidad="1 cucharada" nombre="harina"/>
+        <ingrediente peso="100 gr" nombre="queso emmental suizo o gruyére rallado"/>
+        <ingrediente cantidad="1" nombre="Pan tostado en rebanadas"/>
+        <ingrediente nombre="Tomillo"/>
+        <ingrediente cantidad="1" nombre="hoja de laurel"/>
+        <ingrediente nombre="Pimienta"/>
+    </ingredientes>
+
+    <proceso>
+        <paso numero="1">Pelar y partir las cebollas en rodajas finas.
+        </paso>
+        <paso numero="2">Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse.
+        </paso>
+        <paso numero="3">Añadir la harina sin dejar de remover.</paso>
+        <paso numero="4">Ponerlo en una cazuela con el caldo, el tomillo y el laurel.</paso>
+        <paso numero="5">Dejar cocer a fuego lento durante unos 15 minutos.</paso>
+        <paso numero="6">Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.</paso>
+
+    </proceso>
+</sopa_de_cebollas>

@@ -1,0 +1,78 @@
+<Itinerary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="TE54_3.xsd">
+
+  <Trip code="1234">
+    <Name>Crucero por el Mediterráneo</Name>
+    <Destination>Italia</Destination>
+    <DepartureDate>2020-07-01</DepartureDate>
+    <ArrivalDate>2020-07-15</ArrivalDate>
+    <Price>1500</Price>
+    <Activities>
+      <Activity>
+        <Name>Visita a la Torre de Pisa</Name>
+        <Description>Visita a la Torre de Pisa</Description>
+        <Date>2020-07-02</Date>
+        <Price>20</Price>
+        <Type>Cultural</Type>
+        <Seats>50</Seats>
+      </Activity>
+      <Activity>
+        <Name>Visita a la Torre de Pisa</Name>
+        <Description>Visita a la Torre de Pisa</Description>
+        <Date>2020-07-02</Date>
+        <Price>20</Price>
+        <Type>Cultural</Type>
+        <Seats>50</Seats>
+      </Activity>
+    </Activities>
+    <Excursions>
+      <Excursion>
+        <Name>Visita a la Torre de Pisa</Name>
+        <Description>Visita a la Torre de Pisa</Description>
+        <Date>2020-07-02</Date>
+        <Price>20</Price>
+        <Destination>Italia</Destination>
+        <Seats>50</Seats>
+      </Excursion>
+      <Excursion>
+        <Name>Visita a Roma</Name>
+        <Description>Visita a Roma</Description>
+        <Date>2020-07-03</Date>
+        <Price>20</Price>
+        <Destination>Italia</Destination>
+        <Seats>50</Seats>
+      </Excursion>
+    </Excursions>
+    <Passengers>
+      <Passenger>
+        <Name>John</Name>
+        <LastName>Doe</LastName>
+        <BirthDate>1990-01-01</BirthDate>
+        <PassportNumber>123456789</PassportNumber>
+        <PhoneNumber>
+          <CountryCode>34</CountryCode>
+          <Number>123456789</Number>
+        </PhoneNumber>
+        <Email type="main">javier@gmail.com</Email>
+        <RoomNumber>123</RoomNumber>
+        <RoomType>Individual</RoomType>
+        <TicketNumber>123456789</TicketNumber>
+      </Passenger>
+      <Passenger>
+        <Name>Jane</Name>
+        <LastName>Doe</LastName>
+        <BirthDate>1990-01-01</BirthDate>
+        <PassportNumber>123456789</PassportNumber>
+        <PhoneNumber>
+          <CountryCode>34</CountryCode>
+          <Number>123456789</Number>
+        </PhoneNumber>
+        <Email type="main">manuel@gmail.com</Email>
+        <Email type="secondary">manuel.office@gmail.com</Email>
+        <RoomNumber>123</RoomNumber>
+        <RoomType>Individual</RoomType>
+        <TicketNumber>123456789</TicketNumber>
+      </Passenger>
+    </Passengers>
+  </Trip>
+</Itinerary>
