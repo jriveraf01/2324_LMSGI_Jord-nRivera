@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types Form</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        div + div {
+            margin-top: 1em;
+        }
+        label {
+            display: inline-block;
+            width: 140px;
+            text-align: right;
+        }
+        input {
+            font: 1em sans-serif;
+            width: 200px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+        input:focus {
+            border-color: #000;
+        }
+        input[type="submit"] {
+            padding: 0.7em;
+            border-radius: 0.5em;
+            background: #ccc;
+            border: 1px solid #999;
+            margin-left: 154px;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <label for="text-input">text input type:</label>
+            <input type="text" id="text-input" name="text-input">
+        </div>
+        <div>
+            <label for="password-input">password input type:</label>
+            <input type="password" id="password-input" name="password-input">
+        </div>
+        <div>
+            <label for="email-input">email input type:</label>
+            <input type="email" id="email-input" name="email-input">
+        </div>
+        <div>
+            <label for="url-input">url input type:</label>
+            <input type="url" id="url-input" name="url-input">
+        </div>
+        <div>
+            <label for="number-input">number input type:</label>
+            <input type="number" id="number-input" name="number-input">
+        </div>
+        <div>
+            <label for="tel-input">tel input type:</label>
+            <input type="tel" id="tel-input" name="tel-input">
+        </div>
+        <div>
+            <label for="search-input">search input type:</label>
+            <input type="search" id="search-input" name="search-input">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
