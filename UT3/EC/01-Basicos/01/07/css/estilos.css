@@ -1,0 +1,142 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none; /* Eliminar el borde gris que muestran por defecto todos los elementos */
+}
+
+/* Estilos para el contenedor principal */
+#contenedor {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cabecera */
+#cabecera {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo h1 {
+    font-size: 24px;
+}
+
+#buscador {
+    font-size: 14px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Menú */
+#menu {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #eee;
+    border-bottom: 1px solid #004C99; /* borde inferior azul */
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu ul li {
+    margin-right: 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Lateral izquierdo */
+#lateral {
+    float: left;
+    width: 200px;
+    padding: 0.5em;
+}
+
+#noticias {
+    margin-bottom: 1em;
+    border: 1px solid #C5C5C5; /* borde gris claro */
+}
+
+#publicidad {
+    margin-top: 1em;
+    padding: 0.5em;
+    border: 1px dashed #CC6600; /* borde discontinuo color #CC6600 */
+}
+
+#noticias h3, #publicidad h3 {
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+#noticias p, #publicidad p {
+    margin-bottom: 0.5em;
+}
+
+#noticias .fecha {
+    font-weight: bold;
+}
+
+/* Contenido principal */
+#contenido {
+    float: right;
+    width: 750px;
+    padding: 0.5em;
+}
+
+#principal, #secundario {
+    margin-bottom: 1em;
+}
+
+.articulo {
+    margin-bottom: 1em;
+}
+
+.articulo img {
+    margin: 0.5em;
+    float: left;
+}
+
+#secundario {
+    border: 1px solid #CC6600; /* borde color #CC6600 */
+}
+
+#secundario h2 {
+    font-size: 20px;
+    margin-bottom: 0.5em;
+}
+
+#secundario p {
+    margin-bottom: 0.5em;
+}
+
+/* Pie de página */
+#pie {
+    clear: both;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-top: 1em;
+    border-top: 1px solid #C5C5C5; /* borde superior gris claro */
+    border-bottom: 1px solid #C5C5C5; /* borde inferior gris claro */
+    text-align: center;
+}
+
+#pie .enlaces {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#pie .enlaces a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #000;
+}

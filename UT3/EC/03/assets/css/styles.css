@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('../fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.blog-card {
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    max-width: 375px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.blog-info {
+    padding: 20px;
+}
+
+.blog-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    font-size: 15px;
+    color: hsl(0, 0%, 50%);
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: hsl(47, 88%, 63%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.read-more:hover {
+    background-color: hsl(47, 88%, 50%);
+}

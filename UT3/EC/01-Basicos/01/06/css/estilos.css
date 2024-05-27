@@ -1,0 +1,133 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el contenedor principal */
+#contenedor {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cabecera */
+#cabecera {
+    padding: 1em;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo h1 {
+    font-size: 24px;
+}
+
+#buscador {
+    font-size: 14px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Menú */
+#menu {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #eee;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu ul li {
+    margin-right: 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Lateral izquierdo */
+#lateral {
+    float: left;
+    width: 200px;
+    padding: 0.5em;
+}
+
+#noticias, #publicidad {
+    margin-bottom: 1em;
+}
+
+#noticias h3, #publicidad h3 {
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+#noticias p, #publicidad p {
+    margin-bottom: 0.5em;
+}
+
+#noticias .fecha {
+    font-weight: bold;
+}
+
+#publicidad {
+    margin-top: 1em;
+}
+
+/* Contenido principal */
+#contenido {
+    float: right;
+    width: 750px;
+    padding: 0.5em;
+}
+
+#principal, #secundario {
+    margin-bottom: 1em;
+}
+
+.articulo {
+    margin-bottom: 1em;
+}
+
+.articulo img {
+    margin: 0.5em;
+    float: left;
+}
+
+#secundario h2 {
+    font-size: 20px;
+    margin-bottom: 0.5em;
+}
+
+#secundario p {
+    margin-bottom: 0.5em;
+}
+
+/* Pie de página */
+#pie {
+    clear: both;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+#pie .enlaces {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#pie .enlaces a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #000;
+}

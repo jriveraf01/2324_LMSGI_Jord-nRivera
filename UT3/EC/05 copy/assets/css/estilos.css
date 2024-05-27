@@ -1,0 +1,109 @@
+:root {
+    /* Colores */
+    --color-nutmeg: hsl(14, 45%, 36%);
+    --color-dark-raspberry: hsl(332, 51%, 32%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-rose-white: hsl(330, 100%, 98%);
+    --color-eggshell: hsl(30, 54%, 90%);
+    --color-light-grey: hsl(30, 18%, 87%);
+    --color-wenge-brown: hsl(30, 10%, 34%);
+    --color-dark-charcoal: hsl(24, 5%, 18%);
+    
+    /* Tipografía */
+    --font-family-primary: 'Young Serif', serif;
+    --font-family-secondary: 'Outfit', sans-serif;
+
+    /* Tamaños de fuente */
+    --font-size-paragraph: 14px;
+}
+
+body {
+    font-family: var(--font-family-secondary);
+    background-color: var(--color-light-grey);
+    color: var(--color-dark-charcoal);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.receta {
+    background-color: var(--color-white);
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+.receta-imagen {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.receta-contenido {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.receta-titulo {
+    font-family: var(--font-family-primary);
+    color: var(--color-nutmeg);
+    margin: 0;
+    font-size: 2em;
+}
+
+.receta-descripcion {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-paragraph);
+    color: var(--color-wenge-brown);
+    margin: 10px 0;
+}
+
+.receta-detalles {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-paragraph);
+    margin-bottom: 20px;
+}
+
+.receta-tiempo,
+.receta-preparacion,
+.receta-coccion {
+    color: var(--color-dark-raspberry);
+    font-weight: 600;
+}
+
+.receta-ingredientes,
+.receta-instrucciones,
+.receta-nutricion {
+    margin: 0 0 20px 0;
+}
+
+.receta-ingredientes li,
+.receta-instrucciones li {
+    margin-bottom: 5px;
+}
+
+.receta-nutricion {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.receta-nutricion th,
+.receta-nutricion td {
+    border: 1px solid var(--color-light-grey);
+    padding: 8px;
+    text-align: left;
+}
+
+.receta-nutricion th {
+    background-color: var(--color-eggshell);
+}

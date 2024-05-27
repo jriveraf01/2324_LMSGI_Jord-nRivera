@@ -1,0 +1,170 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none; /* Eliminar el borde gris que muestran por defecto todos los elementos */
+    font-family: Arial, sans-serif; /* Fuente base Arial */
+    font-size: 0.9em; /* Tamaño de fuente base 0.9em */
+    line-height: 1.4; /* Interlineado 1.4 */
+    color: #000; /* Color de texto negro */
+}
+
+/* Estilos para el contenedor principal */
+#contenedor {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cabecera */
+#cabecera {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo h1 {
+    font-size: 24px;
+    background: url('img/logo.gif') no-repeat left center; /* Logotipo como imagen de fondo */
+    padding-left: 100px; /* Ajustar el padding según el tamaño del logo */
+}
+
+#buscador {
+    font-size: 14px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Menú */
+#menu {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background: url('img/fondo_menu.gif') repeat; /* Fondo del menú con una imagen */
+    border-bottom: 1px solid #004C99; /* Borde inferior azul */
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu ul li {
+    margin-right: 1em; /* Margen a la derecha de 1em */
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #FFF; /* Color de enlaces blanco */
+    font-size: 1.3em; /* Tamaño de letra 1.3em */
+}
+
+/* Lateral izquierdo */
+#lateral {
+    float: left;
+    width: 200px;
+    padding: 0.5em;
+    background-color: #F8F8F8; /* Fondo gris claro para #noticias */
+    font-size: 0.9em; /* Tamaño de texto de 0.9em */
+}
+
+#noticias {
+    margin-bottom: 1em;
+    border: 1px solid #C5C5C5; /* Borde gris claro */
+    background-color: #F8F8F8; /* Fondo gris claro */
+}
+
+#noticias h3 {
+    color: #003366; /* Color de h3 en noticias */
+}
+
+#noticias .fecha {
+    font-weight: bold;
+    color: #999; /* Color de fecha gris claro */
+    display: block;
+}
+
+#publicidad {
+    margin-top: 1em;
+    padding: 0.5em;
+    border: 1px dashed #CC6600; /* Borde discontinuo color #CC6600 */
+    background-color: #FFF6CD; /* Fondo amarillo claro */
+    color: #555; /* Color de texto gris oscuro */
+}
+
+#publicidad a {
+    color: #CC6600; /* Color de enlaces en publicidad */
+}
+
+/* Contenido principal */
+#contenido {
+    float: right;
+    width: 750px;
+    padding: 0.5em;
+}
+
+#principal, #secundario {
+    margin-bottom: 1em;
+}
+
+.articulo {
+    margin-bottom: 1em;
+}
+
+.articulo img {
+    margin: 0.5em;
+    float: left;
+}
+
+.articulo p {
+    margin: 0.3em 0; /* Margen superior e inferior de 0.3em */
+}
+
+.articulo a {
+    color: #CC6600; /* Color de enlaces en artículos */
+}
+
+/* Contenido de #secundario */
+#secundario {
+    border: 1px solid #CC6600; /* Borde color #CC6600 */
+    padding: 0.5em;
+}
+
+#secundario h2 {
+    font-size: 1.6em; /* Tamaño de letra 1.6em */
+    color: #CC6600; /* Color de h2 en secundario */
+    line-height: 1.2; /* Interlineado 1.2 */
+    margin-bottom: 0.3em; /* Margen inferior de 0.3em */
+}
+
+#secundario p {
+    margin-bottom: 0.3em; /* Margen inferior de 0.3em */
+}
+
+/* Pie de página */
+#pie {
+    clear: both;
+    padding: 0.5em 0;
+    background-color: #F8F8F8; /* Fondo gris claro */
+    border-top: 1px solid #C5C5C5; /* Borde superior e inferior gris claro */
+    border-bottom: 1px solid #C5C5C5;
+    text-align: center;
+}
+
+#pie .enlaces {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#pie .enlaces a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #000;
+}
+
+#pie .copyright {
+    color: #000; /* Color de texto negro */
+}
