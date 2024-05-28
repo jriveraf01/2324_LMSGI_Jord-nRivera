@@ -1,0 +1,98 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --light-gray: hsl(228, 34%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-fraunces: 'Fraunces', serif;
+}
+
+body {
+    font-family: var(--font-montserrat);
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.product-preview {
+    display: flex;
+    max-width: 800px;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 40px 20px 20px 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-category {
+    font-family: var(--font-montserrat);
+    font-size: 1.2em; 
+    color: var(--light-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0; 
+}
+
+.product-title {
+    font-family: var(--font-fraunces);
+    font-size: 2.2em; 
+    color: var(--very-dark-blue);
+    margin: 0 0 15px 0; 
+}
+
+.product-description {
+    font-size: 1.1em; 
+    color: var(--dark-grayish-blue);
+    margin: 15px 0;
+}
+
+.product-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.current-price {
+    font-family: var(--font-fraunces);
+    font-size: 1.7em; 
+    color: var(--dark-cyan);
+}
+
+.original-price {
+    font-size: 1.2em; 
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+.add-to-cart-button {
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    font-size: 1.2em; 
+    font-family: var(--font-montserrat);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: hsl(158, 36%, 27%);
+}
