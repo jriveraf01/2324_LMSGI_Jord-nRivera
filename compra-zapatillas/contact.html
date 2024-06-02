@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Pacifico&display=swap">
   <link rel="stylesheet" href="css/styles.css">
   <title>Contacto - Compra Zapatillas</title>
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="Logo" class="logo">
+    <div class="logo">Zapaturbo</div>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -19,18 +20,19 @@
     </nav>
   </header>
   <main>
-    <section>
-      <h1>Contacto</h1>
-      <form>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Mensaje:</label>
-        <input id="message" name="message" required></input>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+    <h1>Contacto</h1>
+    <form>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      
+      <label for="message">Mensaje:</label>
+      <input id="message" name="message"></input>
+      
+      <button type="submit">Enviar</button>
+    </form>
   </main>
   <footer>
     <p>Contacto: contacto@zapatillas.com</p>
@@ -40,6 +42,6 @@
       <a href="#">Instagram</a>
     </p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
