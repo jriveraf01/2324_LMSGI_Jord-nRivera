@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios</title>
+    <style>
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background-color: #457b9d;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .precio-section {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .precio-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .precio-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .precio-card {
+            background-color: #023047;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .precio-card h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .precio-card p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        .precio-card button {
+            background-color: hsl(130, 100%, 62%);
+            border: none;
+            border-radius: 20px;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+        .precio-card ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            color: #A8DADC;
+        }
+        .precio-card ul li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .precio-card ul li::before {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="precio-section">
+        <div class="precio-header">
+            <h1>Precios</h1>
+            <p>Simple y Predecibles precios. Sin sorpresas</p>
+        </div>
+        <div class="precio-cards">
+            <div class="precio-card">
+                <h3>Plan Individual</h3>
+                <p>29€ / mes</p>
+                <button>Subscríbete</button>
+                <ul>
+                    <li>✅ Acceso a todos los cursos.</li>
+                    <li>✅ Contenido de calidad impartido por profesionales.</li>
+                    <li>✅ Nuevo contenido cada semana.</li>
+                    <li>✅ Acceso a la comunidad.</li>
+                    <li>✅ Certificados al completar los cursos.</li>
+                </ul>
+            </div>
+            <div class="precio-card">
+                <h3>Plan Individual</h3>
+                <p>¡Ahorra 50€! 299€ / año</p>
+                <button>Subscríbete</button>
+                <ul>
+                    <li>✅ Acceso a todos los cursos.</li>
+                    <li>✅ Centraliza todo en un único pago.</li>
+                    <li>✅ El mejor ahorro para el plan individual.</li>
+                    <li>✅ Contenido de calidad impartido por profesionales.</li>
+                    <li>✅ Nuevo contenido cada semana.</li>
+                    <li>✅ Acceso a la comunidad.</li>
+                    <li>✅ Certificados al completar los cursos.</li>
+                </ul>
+            </div>
+            <div class="precio-card">
+                <h3>Plan Empresas</h3>
+                <p>desde 168€</p>
+                <button>Subscríbete</button>
+                <ul>
+                    <li>✅ Gestión centralizada de cuentas.</li>
+                    <li>✅ Todos los beneficios del plan individual.</li>
+                    <li>✅ Reducción de precios por incremento de cuentas.</li>
+                    <li>✅ Informe trimestral de progreso.</li>
+                    <li>✅ Y muchos más beneficios.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
