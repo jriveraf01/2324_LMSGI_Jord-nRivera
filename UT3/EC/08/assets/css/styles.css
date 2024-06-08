@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
 :root {
   --soft-orange: hsl(35, 77%, 62%);
   --soft-red: hsl(5, 85%, 63%);
@@ -227,3 +229,135 @@ body {
   color: var(--dark-grayish-blue);
   margin: 0;
 }
+
+@media screen and (max-width: 1440px) {
+  .main-container {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main-news-image,
+  .secondary-article-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .logo {
+    margin-left: 10px;
+    font-size: 3em;
+  }
+
+  .navigation {
+    margin-right: 10px;
+    font-size: 1em;
+  }
+
+  .new-articles {
+    padding: 10px;
+  }
+
+  .new-articles-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+
+  .article-title {
+    font-size: 1.3em;
+  }
+
+  .article-description {
+    font-size: 1em;
+  }
+
+  .secondary-article {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .secondary-article-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .secondary-article-content {
+    flex: 1;
+  }
+
+  .secondary-article-title {
+    font-size: 1.3em;
+  }
+
+  .secondary-article-subtitle {
+    font-size: 1.1em;
+  }
+
+  .secondary-article-description {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .main-container {
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+  }
+
+  .navigation {
+    margin: 10px 0;
+  }
+
+  .new-articles-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .article-title {
+    font-size: 1.2em;
+  }
+
+  .article-description {
+    font-size: 0.9em;
+  }
+
+  .secondary-article {
+    max-width: 100%;
+  }
+
+  .secondary-article-title {
+    font-size: 1.2em;
+  }
+
+  .secondary-article-subtitle {
+    font-size: 1em;
+  }
+
+  .secondary-article-description {
+    font-size: 0.8em;
+  }
+}
+
